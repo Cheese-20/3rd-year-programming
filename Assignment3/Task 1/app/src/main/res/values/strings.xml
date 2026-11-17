@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">A1T2</string>
+
+    //activity_game
+    <string name="rollDice"> ROLL DICE </string>
+    <string name="total"> Total: 0 </string>
+
+    //activity_names
+    <string name="startGame"> START GAME </string>
+    <string name="entName"> Enter Player Names </string>
+    <string name="hint1"> Enter name</string>
+    <string name="p1"> Player 1</string>
+    <string name="p2"> Player 2</string>
+
+    //activity_selection
+    <string name="selHeading"> Sequence Dice</string>
+    <string name="selectInstr"> Select Number of Players</string>
+    <string name="two"> 2 </string>
+    <string name="three"> 3 </string>
+    <string name="four"> 4 </string>
+</resources>

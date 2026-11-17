@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_tag_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag Rule"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/rb_bank_pattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Pattern" />
+            <RadioButton
+                android:id="@+id/rb_agg_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agg. Filter" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/layout_tag_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText android:id="@+id/et_keyword" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Keyword" />
+            <EditText android:id="@+id/et_tags" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tags (csv)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bank_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <EditText android:id="@+id/et_bank_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Bank Name" />
+            <EditText android:id="@+id/et_regex" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Regex" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Capture Groups (1-based index):" />
+            <EditText android:id="@+id/et_group_acc" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Group for Account" android:inputType="number" />
+            <EditText android:id="@+id/et_group_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Group for Type" android:inputType="number" />
+            <EditText android:id="@+id/et_group_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Group for Date" android:inputType="number" />
+            <EditText android:id="@+id/et_group_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Group for Description" android:inputType="number" />
+            <EditText android:id="@+id/et_group_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Group for Amount" android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_agg_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <EditText android:id="@+id/et_agg_tags" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Filter Tags (csv)" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

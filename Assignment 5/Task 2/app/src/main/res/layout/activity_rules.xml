@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to Play Sequence Dice"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Roll the dice on your turn.\n2. Place a token on a cell matching your roll.\n3. Special rolls:\n   - 2 or 12: Place anywhere and roll again.\n   - 10: Remove an opponent's token.\n   - 11: Wild card! Place anywhere.\n4. Win by forming a sequence of 5 (2 players) or 6 (3-4 players) tokens."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnYoutube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch Tutorial on YouTube"
+            android:backgroundTint="#FF0000"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Menu" />
+    </LinearLayout>
+</ScrollView>

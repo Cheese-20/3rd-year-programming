@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Generator (Task 1)"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target Emulator Port:"
+            android:layout_marginTop="8dp" />
+        <EditText
+            android:id="@+id/et_target_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="5554" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batch Count:" />
+        <EditText
+            android:id="@+id/et_batch_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days Back (Range Start):" />
+        <EditText
+            android:id="@+id/et_days_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="30" />
+
+        <Button
+            android:id="@+id/btn_generate_random"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Random Batch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom SMS Body:"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/et_custom_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paste message here" />
+
+        <Button
+            android:id="@+id/btn_send_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Custom SMS" />
+
+        <Button
+            android:id="@+id/btn_back_to_watcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Budget Watcher"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
