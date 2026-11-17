@@ -2,9 +2,9 @@
 Assignments and coursework that were completed in 3rd year programming at NMU 
 
 ## Languages & Tools
-Java 
-IntelliJ IDEA
-Android studio
+- Java 
+- IntelliJ IDEA
+- Android studio
 
 ## AI Assistance:
 Generative AI tools were permitted for this coursework to assist with completing assignments and developing practical skills in using AI effectively. They were used to:
